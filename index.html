@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PI - Gonzalez Leon</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #eef5fb;
+      color: #17202a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b2f5b;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 5px solid #f4c542;
+    }
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-box img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      background: white;
+      padding: 6px;
+      border-radius: 8px;
+    }
+
+    .logo-box h1 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 12px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      color: #f4c542;
+    }
+
+    main {
+      width: 86%;
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      border-left: 8px solid #0b5fa5;
+    }
+
+    h2 {
+      color: #0b2f5b;
+      margin-top: 0;
+      border-bottom: 2px solid #d9e7f5;
+      padding-bottom: 8px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ffffff, #dceeff);
+      text-align: center;
+      border-left: 8px solid #f4c542;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      border: none;
+    }
+
+    .question {
+      background: #f7fbff;
+      border: 2px dashed #0b5fa5;
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #f7fbff;
+      border: 1px solid #c7daee;
+      padding: 18px;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0b5fa5;
+    }
+
+    .science-image {
+      margin-top: 25px;
+      text-align: center;
+      background: #eef6ff;
+      padding: 20px;
+      border-radius: 14px;
+    }
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 0.95rem;
+    }
+
+    th {
+      background: #0b2f5b;
+      color: white;
+      padding: 12px;
+    }
+
+    td {
+      border: 1px solid #c7daee;
+      padding: 12px;
+      vertical-align: top;
+    }
+
+    td a {
+      color: #0b5fa5;
+      font-weight: bold;
+    }
+
+    .keyword {
+      background: #fff7d6;
+      border-left: 6px solid #f4c542;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 1.05rem;
+    }
+
+    button {
+      background: #0b5fa5;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    button:hover {
+      background: #073f70;
+    }
+
+    #extra-info {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background: #eaf4ff;
+      border-radius: 10px;
+    }
+
+    .reflection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    footer {
+      text-align: center;
+      background: #0b2f5b;
+      color: white;
+      padding: 20px;
+      margin-top: 35px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+
+      .grid,
+      .reflection {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-box">
+      <img src="logo-unein.png" alt="Logo de la institución">
+      <h1>PI - GONZALEZ LEON</h1>
+    </div>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#conexion">Física + Química</a>
+      <a href="#fuentes">Fuentes</a>
+      <a href="#concepto">Concepto</a>
+      <a href="#reflexion">Reflexión</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <h2>El uso de baterias de litio y zinc-carbon</h2>
+
+      <p>
+        
+        
+      </p>
+
+      <div class="question">
+        <strong>Pregunta guía:</strong>
+        ¿Por qué la tecnología de iones de litio ofrece un mejor
+rendimiento y una vida útil significativamente superiores en
+comparación con los sistemas tradicionales de zinc-carbón?
+      </div>
+    </section>
+
+    <section id="conexion">
+      <h2>Conexión entre Física y Química</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Idea de Física</h3>
+          <p>
+            Como de una energia electrica podemos realizar el arrenque de un
+
+motor mecanico de un carro
+            
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Idea de Química</h3>
+          <p>
+            Como consecuencia de una reacción química se puede generar energía
+
+eléctrica.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Conexión entre ambas materias</h3>
+          <p>
+            Generar enegia electrica para que un vehiculo arranque y ponga en
+
+funcionamiento su motor
+          </p>
+        </div>
+      </div>
+
+      <div class="science-image">
+        <h3>Imagen explicativa del fenómeno</h3>
+        <img src="proceso.png" alt="Logo de la institución">
+        
+      </div>
+    </section>
+
+    <section id="fuentes">
+      <h2>Fuentes consultadas</h2>
+
+      <p>
+        
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tema</th>
+            <th>Autor o institución</th>
+            <th>Fecha</th>
+            <th>Link académico</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Algo sobre el litio</td>
+            <td>Victor Bravo</td>
+            <td>13 de Enero del 2019</td>
+            <td>
+              <a href="https://fundacionbariloche.org.ar/wp-content/uploads/2024/07/Algosobreellitio.pdf" target="_blank">
+                Ver fuente
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Cambios de estado de la materia</td>
+            <td>Khan Academy</td>
+            <td>s.f.</td>
+            <td>
+              <a href="https://www.khanacademy.org/science/ms-chemistry/xc370bc422b7f75fc%3Aphysical-properties-of-matter/xc370bc422b7f75fc%3Astates-of-matter-and-phase-changes/a/states-of-matter-and-phase-changes" target="_blank">
+                Ver fuente
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Simulaciones científicas de Física y Química</td>
+            <td>PhET Interactive Simulations, University of Colorado Boulder</td>
+            <td>s.f.</td>
+            <td>
+              <a href="https://phet.colorado.edu/" target="_blank">
+                Ver fuente
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="concepto">
+      <h2>Palabra científica obligatoria</h2>
+
+      <div class="keyword">
+        <strong>Ion de litio:</strong>
+        Una batería de ion de litio (Li-Ion) es el motor energético del mundo moderno. Es una tecnología de almacenamiento de energía electroquímica recargable que se ha convertido en el estándar de la industria para alimentar desde el teléfono que tienes en la mano hasta los vehículos eléctricos que dominan las calles y los sistemas de almacenamiento de redes de energía renovable.
+      </div>
+
+      <button onclick="mostrarExplicacion()">Mostrar explicación sencilla</button>
+
+      <div id="extra-info">
+        <p>
+          Un atomo de litio es el metal mas ligero que existe.
+        </p>
+      </div>
+    </section>
+
+    <section id="reflexion">
+      <h2>Decisión personal y dificultad presentada</h2>
+
+      <div class="reflection">
+        <div class="card">
+          <h3>Decisión personal tomada</h3>
+          <p>
+            Decidí comprar una bateria de litio y otra de zinc-carbon para
+
+identificar cual se agota primero.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Dificultad o duda surgida</h3>
+          <p>
+            Me costo identificar que bateria es de litio y de zinc-carbon por su
+relacion es tamaño, forma y rendimiento aun que muy poco duradero.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Proyecto Interdisciplinario de Programación, Física y Química | 2do BGU</p>
+  </footer>
+
+  <script>
+    function mostrarExplicacion() {
+      const caja = document.getElementById("extra-info");
+
+      if (caja.style.display === "block") {
+        caja.style.display = "none";
+      } else {
+        caja.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
